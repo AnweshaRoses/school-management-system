@@ -1,0 +1,68 @@
+.attendance-page{
+  display: flex;
+justify-content: center;
+align-items: center;
+width: fit-content;
+flex-grow: 1;
+gap: 1em;
+flex-direction: column;
+}
+
+.attendance-status{
+  display: flex;
+  flex-direction: column;
+}
+.login-page{
+  flex-grow: 1;
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  padding:1em;
+  border:1px solid blue;
+  display:flex;
+  flex-direction:column;
+  width:500px;
+  position:relative;
+  border-radius:10px;
+}
+form::before{
+  --pic-size:20%;
+  content:"";
+  position:absolute;
+  bottom:100%;
+  right:1%;
+  width:50px;
+  height:50px;
+  background:url("https://i.ibb.co/0mqQcVL/329618.png");
+   background-position: center; 
+  background-size:100% 100%;
+    transform:scaleX(-1);
+}
+
+label,[type="submit"]{
+  margin-top:1em;
+}
+
+form input{
+  border-radius:10px;
+  border:none;
+  padding:0.5em;
+  font-size:1.2rem;
+  margin-top:0.5rem;
+  border:1px solid blue;
+}
+
+[type="submit"]{
+  background:#6674bb;
+  color:white; 
+  transition:0.5s;
+}
+[type="submit"]:hover{
+  background:blue;
+}
