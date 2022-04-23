@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Fredoka&family=Poppins:wght@200&display=swap');
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+ 
+}
+html,body, #root{
+  padding:0;
+  margin: 0;
+}
+html,body,#root,.App{
+  height: 100%;
+  width:100%;
+}
+
+
+.Sidebar{
+  flex-grow:0.1;
+  height: 100%;
+  width: 20vw;
+  position: fixed;
+  background-color:#6674BB;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sblist{
+  height:auto;
+  padding :0px;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sblist #active{
+  background-color:rgb(238, 238, 238,0.3);
+  box-shadow: 0px 0px 10px 0px rgb(164, 165, 237);
+}
+.sbtitle{
+  height:30%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #E5E5E5;
+}
+.sbrow{
+  list-style: none; 
+  width:90%;
+  height:55px;
+  margin:1px;
+  display:flex;
+  color: #E5E5E5;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+}
+
+
+.sbrow:hover{
+   cursor:pointer;
+   background-color: rgb(238, 238, 238,0.3);
+   transition: 0.2s ease-in;
+  }
+
+.sbfooter{
+  justify-self: flex-end;
+  align-self: flex-end;
+  color: #E5E5E5 ;
+}
+.sbfooter small{
+  display: block;
+}
+
+.secondary{
+  display: flexbox;
+  width:80%;
+  flex:20;
+  position: absolute;
+  left:20%;
+  background-color: rgba(97, 111, 184,0.3);
+}
+
+.event-header{
+  padding: 2% 0px 1% 5%;
+  font-size:  3vw;
+  font-family: 'Poppins', sans-serif;
+}
+.event-header h6{
+  margin: 0;
+  font-size: 1rem;
+}
+.event-header h1{
+  margin: 12px;
+}
+.card-container{
+  margin: 15px 0px 15px 12px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+.card-container h1{
+  align-self: center;
+}
+.Card-content img{
+  width:80%;
+  border: solid 5px white ;
+  border-radius: 10px;
+  align-self:center ;
+  box-shadow: 0px 1px 5px 0px grey;
+}
+
+.Card-content h4{
+  cursor: pointer;
+}
+.cdiv1{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cdiv1 button{
+  border: solid 1px white ;
+  padding: 0.5vw;
+  font-size: 22px;
+  background-color: #672280;
+  color: #f1f1f1;
+  border-radius: 20px;
+  width:50%;
+  align-self: center;
+}
+.Card{
+  height:auto;
+  width:80%;
+  padding: 20px 40px;
+  margin:20px 5px;
+  position: relative;
+  border-radius: 20px;  
+  border: solid 1px white;
+  background-color: rgba(255, 255, 255 , 0.5);
+  background-color: #f1f1f1;
+  box-shadow: 5px 10px 15px rgb(164, 165, 237);
+}
+
+.cards{
+  margin:20px 5px;
+  transition: 0.2s ease-out;
+}
+
+
+.NavBar{
+  height: 10vw;
+  width: 100%;
+  background: linear-gradient( to right, #672280, #A626D3 100%);
+  font: 4vw;
+  display: flex;
+  justify-content: space-between ;
+  
+  color: white;
+}
+
+.logo--navbar{
+  display: flex;
+  justify-content: center;
+  font-family: 'Fredoka', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 800;
+  font-size: 2.7vw;
+  padding: 12px;
+}
+
+.center{ 
+    align-self: center;
+} 
+/* parent has to have display flex for .center */
+
+.nav--desc{
+  padding:20px;
+  margin:20px;
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.nav--desc a{
+  text-decoration: none;
+  color: #f1f1f1;
+  
+}
+.carousel{
+  height:120vh;
+  background-image: url(./components/school-img.jpg);
+  filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.carousel-text{
+  z-index: 2;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left:50%;
+  top:60%;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
+
+.home{
+  height: 100vh;
+
+   display: grid;
+   grid-template-columns: 60% auto;
+}
+.left-home, .right-home{
+  padding: 20%;
+  padding-bottom: 0;
+  font-family: 'Fredoka', sans-serif;
+ 
+}
+
+.home-desc{
+  margin: 20px 0px;
+  padding:20px;
+  border-radius: 5%;
+  background-color: rgba(255, 255, 255 , 0.5);
+  
+  border: solid 2px white;
+}
+.home-face{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  border: solid 2px white;
+  box-shadow: 0px 0px 13px 0px grey ;
+}
+
+.sub{
+  height:auto;
+  width: auto;
+  padding: 5% 7%;
+  margin:10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgb(164, 165, 237);
+}
+
+.sub h3{
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.sub:hover{
+  box-shadow: 0px 0px 10px 0px white;
+}
+
