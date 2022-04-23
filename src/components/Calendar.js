@@ -31,7 +31,7 @@ export default function AttendanceCalendar({setMonthlyPresent}) {
 
   return (
        <Calendar onChange={setDate} value={dateNow}  onActiveStartDateChange={({ action, activeStartDate, value, view })=>{
-         if(view=="month"){
+         if(view==="month"){
            setDate(activeStartDate)
            addAttendanceTiles()
          }
