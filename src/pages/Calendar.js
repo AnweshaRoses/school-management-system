@@ -24,11 +24,20 @@ export default function App() {
   }
 
   return (
-       <Calendar onChange={setDate} value={dateNow}  onActiveStartDateChange={({ action, activeStartDate, value, view })=>{
+            <div className='calender-envelope'>
+                <div className='header'>
+         <h1>Calender</h1>
+          </div>
+       <div className='calendar-container'>
+            <Calendar onChange={setDate} value={dateNow}  onActiveStartDateChange={({ action, activeStartDate, value, view })=>{
          if(view=="month"){
            setDate(activeStartDate)
            addAttendanceTiles()
          }
        }}/>
+        
+       </div>
+            </div>
+         
   );
 }

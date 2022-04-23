@@ -18,20 +18,20 @@ import React from "react"
         link:"/results"
      },
      {
-        title:"Attendance",
-        icon:<AttendanceIcon/>,
-        link:"/attendance"
-     },
-     {
       title:"Events",
       icon:<EventIcon/>,
       link:"/Events"
    },
-     {
+   {
         title:"Calender",
         icon:<CalendarMonthIcon/>,
         link:"/calender"
-     }
+    },
+   {
+      title:"Login",
+      icon:<AttendanceIcon/>,
+      link:"/Login"
+   },
  ]
  export const marksData = [
    {

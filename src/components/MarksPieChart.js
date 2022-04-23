@@ -4,7 +4,7 @@ import { VictoryPie } from 'victory';
 export default function MarksPieChart({size,subject,percentage}) {
     const leftOutPercent=100-percentage
   return (
-    <svg  width={size} height={size}>   
+    <svg className='pie-chart' width={size} height={size}>   
 <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" className="marks-pie-chart-subject">{subject}</text>
 <VictoryPie
   standalone={false}

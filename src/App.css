@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
- 
+  /* background-color: rgba(97, 111, 184,0.3); */
 }
 html,body, #root{
   padding:0;
@@ -81,22 +81,23 @@ html,body,#root,.App{
 .secondary{
   display: flexbox;
   width:80%;
+  min-height: 100vh;
   flex:20;
   position: absolute;
   left:20%;
   background-color: rgba(97, 111, 184,0.3);
 }
 
-.event-header{
+.header{
   padding: 2% 0px 1% 5%;
   font-size:  3vw;
   font-family: 'Poppins', sans-serif;
 }
-.event-header h6{
+.header h6{
   margin: 0;
   font-size: 1rem;
 }
-.event-header h1{
+.header h1{
   margin: 12px;
 }
 .card-container{
@@ -265,3 +266,23 @@ html,body,#root,.App{
   box-shadow: 0px 0px 10px 0px white;
 }
 
+.pie-chart{
+  display :flex;
+}
+
+.charts{
+  width:80%;
+}
+
+.calendar-container{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* .calender-envelope{
+  display : flex;
+  align-items:stretch;
+} */
