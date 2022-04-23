@@ -14,10 +14,6 @@ app.use(cors())
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/attendance', require('./routes/attendance'))
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
 app.listen(port, () => {
   console.log(`Take-A-Note server listening at http://localhost:${port}`)
 })
