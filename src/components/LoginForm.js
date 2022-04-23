@@ -1,11 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 
 export default function LoginForm() {
   const [emailid, setEmailid] = useState({email: "",password: ""})
+  const navigate = useNavigate()
   const handleSubmit= async (e)=>{
     e.preventDefault();
     const response = await fetch("http://localhost:5000/api/auth/login",{
@@ -20,8 +21,7 @@ export default function LoginForm() {
 
     if(json.success){
       localStorage.setItem('token',json.authtoken);
-      let history = useHistory()
-      history.push("/");
+      navigate("/");
     } else {
       console.clear()
       alert("Incorrect Email or Password")
