@@ -15,7 +15,7 @@ export default function Home(props){
     return(
         <div className='home'>
             <div className='left-home'>
-           <img className='home-face' src={props.pic}/>
+           <img className='home-face' src={props.pic} alt=""/>
            
            <div className='home-desc'>
                <h2 className='home-name'>{props.name}</h2>
