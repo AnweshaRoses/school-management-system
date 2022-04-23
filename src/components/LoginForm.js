@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { unstable_HistoryRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 
 
@@ -20,8 +20,11 @@ export default function LoginForm() {
 
     if(json.success){
       localStorage.setItem('token',json.authtoken);
-      let history=unstable_HistoryRouter();
+      let history = useHistory()
       history.push("/");
+    } else {
+      console.clear()
+      alert("Incorrect Email or Password")
     }
     
   }
