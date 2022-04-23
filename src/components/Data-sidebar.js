@@ -33,8 +33,30 @@ import React from "react"
         link:"/calender"
      }
  ]
-  
- 
+ export const marksData = [
+   {
+     exam: 'FA 1',
+     marks: 89,
+    
+   },
+   {
+     exam: 'SA 1',
+     marks: 63,
+    
+   },
+   {
+     exam: 'FA 2',
+     marks: 94,
+    
+   },
+   {
+     exam: 'SA 2',
+     marks: 43,
+    
+   },
+
+
+ ];
 
  export const EventsData = [
 
@@ -78,3 +100,4 @@ import React from "react"
 //      "physics",
 //      "maths"
 // ]
+

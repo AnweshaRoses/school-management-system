@@ -1,21 +1,26 @@
 import React from 'react';
 import './App.css';
+import { Marks } from './pages/marks/Marks';
 import Sidebar from './components/sidebar';
 import Events from './pages/events';
 import Login from './pages/login-in';
 import Calender from './pages/Calendar';
 import Home  from './pages/home';
+
 export default function App(){
 
 
   return(
+
     <div className='App'>
           <Sidebar/>
           <div className='secondary'>
           {(window.location.pathname=="/Events")
               && <Events/>}
-          {(window.location.pathname=="/calender")
-              && <Calender/>}
+           {(window.location.pathname=="/Events")
+              && <Events/>}
+          {(window.location.pathname=="/results")
+              && <Marks/>}
            {(window.location.pathname=="/home")
               && <Home pic='https://media.istockphoto.com/photos/portrait-of-happy-middle-school-boy-picture-id1138949949?k=20&m=1138949949&s=170667a&w=0&h=u2ArzGTmMPObeKDbgGx3Pe7RJMQzXtk_j_JpMc21z5k='
                        name=" Tammy Mishra "
@@ -28,6 +33,7 @@ export default function App(){
 
     </div>    
     )
+
 }
 
 
