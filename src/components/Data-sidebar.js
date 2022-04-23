@@ -40,34 +40,34 @@ import React from "react"
 
    {
        title:"Sports Day",
-       date:"12th August 2022",
-       line1:"Sports day of Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-       line2: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam",
+       date:"29th August 2022",
+       line1:"National Sports Day is celebrated every year in India on 29 August. The day is celebrated to commemorate the birth anniversary of Indian hockey legend, Major Dhyan Chand.",
+       line2: "schools choose to offer medals or prizes to the winners of the various events, but for others, participation is its own reward.",
        img:"https://www.cedarcollege.sa.edu.au/wp-content/uploads/2017/03/Sports-day1.jpg"
     },
 
     {
-      title:"Home",
-      date:"12th August 2022",
-      line1:"hello",
-      line2:"world",
-      img:""
+      title:"Annual Day",
+      date:"12th September 2022",
+      line1:"Annual day celebrations bring out the creative best in students.",
+      line2:"On the occasion, the Classical Duet Dance brought out the talents of the School students. And the debate on the topic “Has technology made the young less creative and more alone?” gave the young debaters a great opportunity to showcase their literary talents.",
+      img:"https://www.dailyexcelsior.com/wp-content/uploads/2019/03/page10-6-1.jpg"
    },
 
    {
-      title:"Home",
+      title:"Model United Nations",
       date:"12th August 2022",
-      line1:"hello",
-      line2:"world",
-      img:""
+      line1:"These are powerful networks that can open up many opportunities to collaborate, partner and work together in the future,",
+      line2:"it is extremely beneficial for ‘communication skills, writing skills, negotiation skills, and public speaking",
+      img:"https://img.theweek.in/content/dam/week/leisure/society/images/2018/11/1/mun-1.jpg"
    },
 
    {
-      title:"Home",
-      date:"12th August 2022",
-      line1:"hello",
-      line2:"world",
-      img:""
+      title:"Grandparents' Day",
+      date:" 11th September 2022",
+      line1:"Children have an opportunity to show their appreciation and love toward their grandparents (and other special older adult friends), and grandparents feel valued as their role is validated.      ",
+      line2:"You can learn a lot more from grandparents than you think you can – and it's not a chore.",
+      img:"https://blog.fnp.com/wp-content/uploads/2019/08/27th-Aug-3-3-810x420.png"
    }
     
 ]
