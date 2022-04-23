@@ -10,12 +10,12 @@ import React from "react"
 
         title:"Home",
         icon:<HomeIcon/>,
-        link:"/home"
+        link:"/Home"
      },
      {
         title:"Results",
         icon:<QuizIcon/>,
-        link:"/results"
+        link:"/Results"
      },
      {
       title:"Events",
@@ -25,7 +25,7 @@ import React from "react"
    {
         title:"Calender",
         icon:<CalendarMonthIcon/>,
-        link:"/calender"
+        link:"/Calender"
     },
    {
       title:"Login",

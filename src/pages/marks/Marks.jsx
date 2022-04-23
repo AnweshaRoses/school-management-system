@@ -5,7 +5,7 @@ import AnnualTestChart from '../../components/AnnualTestChart'
 import Featured from '../../components/featured/Featured'
 
 
-export const Marks = () => {
+export default function Marks() {
   return (
     <div className='marks'>
       <div className='header'>
