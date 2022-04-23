@@ -26,55 +26,28 @@ import React from "react"
         link:"/calender"
      }
  ]
- export const userData = [
+ export const marksData = [
    {
-     name: 'Jan',
-     users: 4000,
+     exam: 'FA 1',
+     marks: 89,
+    
    },
    {
-     name: 'Feb',
-     users: 3000,
+     exam: 'SA 1',
+     marks: 63,
+    
    },
    {
-     name: 'March',
-     users: 5000,
+     exam: 'FA 2',
+     marks: 94,
+    
    },
    {
-     name: 'April',
-     users: 4000,
+     exam: 'SA 2',
+     marks: 43,
+    
    },
-   {
-     name: 'May',
-     users: 3000,
-   },
-   {
-     name: 'June',
-     users: 2000,
-   },
-   {
-     name: 'July',
-     users: 4000,
-   },
-   {
-     name: 'Aug',
-     users: 3000,
-   },
-   {
-     name: 'Sept',
-     users: 4000,
-   },
-   {
-     name: 'Oct',
-     users: 1000,
-   },
-   {
-     name: 'Nov',
-     users: 4000,
-   },
-   {
-     name: 'Dec',
-     users: 3000,
-   },
+
 
  ];
       
