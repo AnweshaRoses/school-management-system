@@ -44,6 +44,11 @@ https://youtu.be/HqyDdSnnYMg
 <img width="1440" alt="Screenshot 2022-04-24 at 5 55 16 AM" src="https://user-images.githubusercontent.com/67006588/164951176-64996b8c-e14b-44e9-ad86-1ff1c354f7b2.png">
 
 
+## Further Down the line
+* We will integrate a ML based face recognition feature which will make it easier to take attendance. 
 
+* A weekly Tasks section will be added where a student can upload his or her assignments so that teachers don't have to rely on external softwares like Google classroom. 
+
+* An announcement section where students as well as teachers will be able to post announcements.
 
 
