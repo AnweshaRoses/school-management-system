@@ -1,42 +1,37 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useState } from 'react';
+import authContext from '../context/authContext'
 import { useNavigate } from 'react-router-dom';
-
+import { useEffect } from 'react';
 
 
 export default function LoginForm() {
-  const [emailid, setEmailid] = useState({email: "",password: ""})
+  const [emailid, setEmailid] = useState({email: "", password: ""})
+  const context = useContext(authContext)
+  const {loginUser, loginState} = context
   const navigate = useNavigate()
-  const handleSubmit= async (e)=>{
-    e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/auth/login",{
-      method:'POST',
-      headers:{
-        'Content-Type':'application/json'
-      },
-      body: JSON.stringify({email:emailid.email,password:emailid.password})
-    });
-    const json=await response.json()
-    console.log(json)
 
-    if(json.success){
-      localStorage.setItem('token',json.authtoken);
-      navigate("/");
-    } else {
-      console.clear()
-      alert("Incorrect Email or Password")
-    }
-    
+  const handleSubmit= async (e)=>{
+    e.preventDefault()
+    loginUser(emailid, navigate)
+    setEmailid({email: "", password: ""})
   }
+
   const onChange=(e)=>{
-    setEmailid({...emailid,[e.target.name]: e.target.value})
+    setEmailid({...emailid, [e.target.name] : e.target.value})
   }
+
+  useEffect(() => {
+    if(loginState)
+        navigate('/Home')
+  })
+
   return (
     <form action="/login" onSubmit={handleSubmit}>
         <label for="email">Email</label>
-        <input type="email" value={emailid.email} onChange={onChange} id="email" />
+        <input type="email" name='email' value={emailid.email} onChange={onChange} id="email" />
         <label for="password">Password</label>
-        <input type="password" value={emailid.password} onChange={onChange}  id="password"/>
+        <input type="password" name='password' value={emailid.password} onChange={onChange}  id="password"/>
         <input type="submit" value="Submit"/>
     </form>
   )

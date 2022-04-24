@@ -48,7 +48,7 @@ router.post('/login', [
 router.post('/getStudent', fetchStudent, async (req, res) => {
     try{
         const userId = req.user.id
-        const user = await Student.findById(userId).select('email').select('name')
+        const user = await Student.findById(userId)
         res.status(200).send(user)
     } catch (error) {
         console.error(error.message)

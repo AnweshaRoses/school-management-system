@@ -1,40 +1,33 @@
 import "./featured.css"
 
-export default function Featured() {
+export default function Featured(props) {
     return (
         <div className='featured'>
             <div className="featureditem">
-                <span className="featuredtitle">English</span>
+                <span className="featuredtitle">Math</span>
                 <div className="featuredmoneycontainer">
-                    <span className="featuredmoney">91/100</span>
+                    <span className="featuredmoney">{props.math}</span>
                 </div>
                 <span className="featuredsub">Formative assessment 3</span>
             </div>
             <div className="featureditem">
-                <span className="featuredtitle">Maths</span>
+                <span className="featuredtitle">Social Studies</span>
                 <div className="featuredmoneycontainer">
-                    <span className="featuredmoney">77/100</span>
+                    <span className="featuredmoney">{props.socialStudies}</span>
                 </div>
                 <span className="featuredsub">Formative assessment 3</span>
             </div>
             <div className="featureditem">
-                <span className="featuredtitle">Physics</span>
+                <span className="featuredtitle">Science</span>
                 <div className="featuredmoneycontainer">
-                    <span className="featuredmoney">85/100</span>
+                    <span className="featuredmoney">{props.science}</span>
                </div>
                 <span className="featuredsub">Formative assessment 3</span>
             </div>
             <div className="featureditem">
-                <span className="featuredtitle">Chemistry</span>
+                <span className="featuredtitle">General Knowledge</span>
                 <div className="featuredmoneycontainer">
-                    <span className="featuredmoney">99/100</span>
-                </div>
-                <span className="featuredsub">Formative assessment 3</span>
-            </div>
-            <div className="featureditem">
-                <span className="featuredtitle">Computers</span>
-                <div className="featuredmoneycontainer">
-                    <span className="featuredmoney">65/100</span>
+                    <span className="featuredmoney">{props.generalKnowledge}</span>
                 </div>
                 <span className="featuredsub">Formative assessment 3</span>
             </div>

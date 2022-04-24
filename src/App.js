@@ -1,39 +1,41 @@
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import React from 'react';
 import './App.css';
-import  Marks  from './pages/marks/Marks';
+import Marks from './pages/marks/Marks';
 import Sidebar from './components/Sidebar';
 import Events from './pages/Events';
 import Login from './pages/Login';
 import Calender from './pages/Calendar';
-import Home  from './pages/Home';
+import Home from './pages/Home';
+import AuthState from './context/authState';
 
-export default function App(){
+export default function App() {
 
 
-  return(
+  return (
 
     <div className='App'>
-          <Sidebar/>
-          <div className='secondary'>
+      <AuthState>
+        <Sidebar />
+        <div className='secondary'>
           <Routes>
-           <Route exact path='/'  element={<Login/>}
-                                          />
- 	        <Route path='/Home' element={<Home pic='https://media.istockphoto.com/photos/portrait-of-happy-middle-school-boy-picture-id1138949949?k=20&m=1138949949&s=170667a&w=0&h=u2ArzGTmMPObeKDbgGx3Pe7RJMQzXtk_j_JpMc21z5k='
-                                              name=" Tammy Mishra "
-                                              class="8"
-                                              section="E"
-                                               roll="34567"
-                                              teacher="John Doe"/>} />
-           <Route path='/Results' element={<Marks/>} />
-		     <Route path='/Events' element={<Events/>} />
-		     <Route path='/Calender' element={< Calender/>} />
-           <Route path='/Login' element={< Login/>} />
+            <Route exact path='/' element={<Login />}
+            />
+            <Route path='/Home' element={<Home pic='https://media.istockphoto.com/photos/portrait-of-happy-middle-school-boy-picture-id1138949949?k=20&m=1138949949&s=170667a&w=0&h=u2ArzGTmMPObeKDbgGx3Pe7RJMQzXtk_j_JpMc21z5k='
+              name=" Tammy Mishra "
+              class="VIII-E"
+              roll="34567"
+              teacher="Sital Dash" />} />
+            <Route path='/Results' element={<Marks />} />
+            <Route path='/Events' element={<Events />} />
+            <Route path='/Calender' element={< Calender />} />
+            <Route path='/Login' element={< Login />} />
           </Routes>
-          </div>
-
-    </div>    
-    )
+          
+        </div>
+      </AuthState>
+    </div>
+  )
 
 }
 
