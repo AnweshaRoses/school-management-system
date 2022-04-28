@@ -30,7 +30,7 @@ export default function App() {
           </div>
        <div className='calendar-container'>
             <Calendar onChange={setDate} value={dateNow}  onActiveStartDateChange={({ action, activeStartDate, value, view })=>{
-         if(view=="month"){
+         if(view==="month"){
            setDate(activeStartDate)
            addAttendanceTiles()
          }
